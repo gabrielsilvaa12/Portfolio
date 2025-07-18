@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- LÓGICA DO MENU HAMBURGER (MOBILE) ---
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
 
@@ -14,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.remove("active");
     }));
     
-    // --- LÓGICA DO INDICADOR DE SEÇÃO ATIVA ---
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll(".nav-menu a");
 
@@ -39,8 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener("scroll", navHighlighter);
 
-
-    // --- LÓGICA DO MODAL DE PROJETOS ---
     const projectCards = document.querySelectorAll('.card-projeto');
     const modalContainer = document.getElementById('modal-container');
     const modalCloseBtn = document.querySelector('.modal-close');
@@ -93,8 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
-    // --- LÓGICA DAS PARTÍCULAS (tsParticles) ---
     tsParticles.load({
         id: "tsparticles",
         options: {
@@ -124,7 +118,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- INICIALIZAÇÃO DO AOS (Animate on Scroll) ---
      AOS.init({
         duration: 1000,
         once: true,
