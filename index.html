@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Aparecido | Desenvolvedor Full-Stack</title>
+
+    <meta name="description" content="Portfólio de Gabriel Aparecido, um desenvolvedor Full-Stack apaixonado por criar soluções web eficientes e criativas. Veja meus projetos e habilidades.">
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Portfólio" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-blobs">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <div id="tsparticles"></div>
+
+    <div id="main-content-wrapper">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">G.A.</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+        <header class="header">
+            <h1 data-aos="fade-down">Gabriel Aparecido</h1>
+            <p class="subtitulo" data-aos="fade-up" data-aos-delay="200">Desenvolvedor Full-Stack</p>
+
+            <a href="curriculo.pdf" download="Gabriel_Aparecido_CV.pdf" class="btn btn--primary" data-aos="fade-up" data-aos-delay="400">
+                Download CV
+            </a>
+        </header>
+
+        <section id="sobre" class="container">
+            <div class="secao-conteudo sobre-mim-layout" data-aos="fade-right">
+                <div class="sobre-mim-foto">
+                    <img src="https://via.placeholder.com/400/EFEFD0/1A659E?text=Sua+Foto+Aqui" alt="Foto de perfil de Gabriel Aparecido, desenvolvedor web.">
+                </div>
+                <div class="sobre-mim-texto">
+                    <h2>Sobre Mim</h2>
+                    <p>
+                        Olá! Sou um desenvolvedor apaixonado por tecnologia e soluções criativas. Vindo de uma trajetória [mencione sua área anterior, ex: na engenharia], desenvolvi uma forte capacidade analítica e de resolução de problemas, habilidades que hoje aplico para construir aplicações web robustas e eficientes.
+                    </p>
+                    <p>
+                        Minha jornada na programação é movida pela curiosidade e pelo desejo de aprender constantemente. Foco em criar código limpo, escalável e que proporcione uma excelente experiência ao usuário. Estou em busca de uma oportunidade para colaborar em projetos desafiadores e continuar crescendo profissionalmente na área de tecnologia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <main class="container">
+            <section id="projetos" class="secao-conteudo" data-aos="fade-up">
+                <h2>Projetos</h2>
+                <div class="grid-projetos">
+                    <div class="card-projeto" data-aos="fade-up" data-aos-delay="100" data-title="Site de Escola de Música" data-image="Animação.gif" data-desc="Esta é uma descrição mais longa e detalhada sobre o projeto da Escola de Música. O desafio foi criar uma interface convidativa e totalmente responsiva, utilizando HTML5 semântico, CSS3 com Flexbox e um pouco de JavaScript para interatividade, como um menu mobile e um carrossel de depoimentos." data-techs="HTML5, CSS3, JavaScript, Responsividade" data-github="https://github.com/gabrielsilvaa12/escola_arcos_Lapa" data-demo="https://seu-usuario.github.io/escola-musica">
+                        <img src="Animação.gif" alt="Preview do Projeto Escola de Música">
+                        <div class="card-info">
+                            <h3>Site de Escola de Música</h3>
+                            <p>Landing page moderna e responsiva com foco na experiência do usuário e design visual.</p>
+                        </div>
+                    </div>
+                    <div class="card-projeto" data-aos="fade-up" data-aos-delay="200" data-title="Sistema GardenMe" data-image="https://via.placeholder.com/800x500/1A659E/EFEFD0?text=Sistema+GardenMe" data-desc="GardenMe é um sistema CRUD (Create, Read, Update, Delete) completo desenvolvido em PHP. O projeto inclui um sistema de login seguro com autenticação via JWT (JSON Web Tokens), cadastro de usuários com hashing de senhas e uma API RESTful para gerenciar categorias de plantas. Foi um grande aprendizado em arquitetura back-end e segurança." data-techs="PHP, MySQL, JWT, API REST, JavaScript" data-github="https://github.com/seu-usuario/gardenme">
+                        <img src="https://via.placeholder.com/400x250/1A659E/EFEFD0?text=Sistema+GardenMe" alt="Preview do Projeto GardenMe">
+                        <div class="card-info">
+                            <h3>Sistema GardenMe</h3>
+                            <p>CRUD completo com autenticação de usuários (JWT) e sistema de categorias. Foco no back-end e segurança de APIs.</p>
+                        </div>
+                    </div>
+                    <div class="card-projeto" data-aos="fade-up" data-aos-delay="300" data-title="App TitoGo" data-image="https://via.placeholder.com/800x500/1A659E/EFEFD0?text=App+TitoGo" data-desc="TitoGo é um protótipo de aplicativo de caronas desenvolvido com React Native. O app permite que usuários se cadastrem, procurem por caronas disponíveis com base na sua localização e ofereçam caronas. O projeto explora o uso de componentes, gerenciamento de estado e integração com mapas (usando a API do Google Maps)." data-techs="React Native, JavaScript, Google Maps API" data-github="https://github.com/seu-usuario/titogo">
+                        <img src="https://via.placeholder.com/400x250/1A659E/EFEFD0?text=App+TitoGo" alt="Preview do Projeto TitoGo">
+                        <div class="card-info">
+                            <h3>App TitoGo</h3>
+                            <p>Aplicativo mobile de caronas com foco em alunos e funcionários e funcionalidades de localização.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="habilidades" class="secao-conteudo" data-aos="fade-up">
+                <h2>Habilidades</h2>
+                <div class="grid-habilidades">
+                    <div class="card-habilidade" data-aos="fade-up" data-aos-delay="100">
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <h3>HTML5</h3>
+                        <p>Estruturação semântica e acessível, utilizando as melhores práticas para garantir a base sólida de qualquer projeto web.</p>
+                    </div>
+                    <div class="card-habilidade" data-aos="fade-up" data-aos-delay="200">
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                        <h3>CSS3</h3>
+                        <p>Estilização avançada com layouts responsivos (Flexbox e Grid) e animações para criar interfaces visualmente atraentes e intuitivas.</p>
+                    </div>
+                    <div class="card-habilidade" data-aos="fade-up" data-aos-delay="300">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <h3>JavaScript</h3>
+                        <p>Criação de interatividade e dinamismo para aplicações web, manipulação do DOM e lógica de front-end para uma experiência de usuário rica.</p>
+                    </div>
+                    <div class="card-habilidade" data-aos="fade-up" data-aos-delay="400">
+                        <i class="devicon-php-plain colored"></i>
+                        <h3>PHP</h3>
+                        <p>Desenvolvimento de aplicações robustas no lado do servidor, com forte integração com bancos de dados como o MySQL.</p>
+                    </div>
+                    <div class="card-habilidade" data-aos="fade-up" data-aos-delay="500">
+                        <i class="devicon-nodejs-plain-wordmark colored"></i>
+                        <h3>Node.js</h3>
+                        <p>Construção de APIs e serviços de back-end rápidos e escaláveis, utilizando o poder do JavaScript no lado do servidor.</p>
+                    </div>
+                    <div class="card-habilidade" data-aos="fade-up" data-aos-delay="600">
+                        <i class="devicon-python-plain-wordmark colored"></i>
+                        <h3>Python</h3>
+                        <p>Linguagem versátil para desenvolvimento web com frameworks como Django, além de automação de scripts e análise de dados.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contato" class="secao-conteudo" data-aos="fade-up">
+                <h2>Contato</h2>
+                <p style="text-align: center;">Vamos conversar! Você pode me encontrar nas seguintes plataformas:</p>
+                <div class="contato-links">
+                    <a href="https://www.linkedin.com/in/gabriel-aparecido-/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/gabrielsilvaa12" target="_blank">GitHub</a>
+                    <a href="mailto:gabrieusilvaa14@gmail.com">Email</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Gabriel Aparecido. Todos os direitos reservados.</p>
+        </footer>
+    </div> <div id="modal-container" class="hidden">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-image" src="" alt="Imagem do Projeto">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <div class="modal-techs">
+                <strong>Tecnologias:</strong> <span id="modal-tech-list"></span>
+            </div>
+            <div class="modal-links">
+                <a id="modal-github-link" href="#" target="_blank" class="btn btn--secondary">Ver Código</a>
+                <a id="modal-demo-link" href="#" target="_blank" class="btn btn--primary">Ver Demo</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.8.1/tsparticles.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
