@@ -41,7 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalContainer = document.getElementById('modal-container');
     const modalCloseBtn = document.querySelector('.modal-close');
     
-    const modalImage = document.getElementById('modal-image');
+    // Novo container de mídia
+    const modalMediaContainer = document.getElementById('modal-media-container');
     const modalTitle = document.getElementById('modal-title');
     const modalDescription = document.getElementById('modal-description');
     const modalTechList = document.getElementById('modal-tech-list');
@@ -51,15 +52,35 @@ document.addEventListener('DOMContentLoaded', () => {
     projectCards.forEach(card => {
         card.addEventListener('click', () => {
             const title = card.dataset.title;
-            const image = card.dataset.image;
+            const imageSrc = card.dataset.image;
+            const videoSrc = card.dataset.video;
             const desc = card.dataset.desc;
             const techs = card.dataset.techs;
             const github = card.dataset.github;
             const demo = card.dataset.demo;
 
+            modalMediaContainer.innerHTML = '';
+
+            if (videoSrc) {
+                const video = document.createElement('video');
+                video.src = videoSrc;
+                video.controls = true;
+                video.autoplay = true;
+                video.style.width = '100%';
+                video.style.borderRadius = '8px';
+                video.style.marginBottom = '1.5rem';
+                modalMediaContainer.appendChild(video);
+            } else if (imageSrc) {
+                const image = document.createElement('img');
+                image.src = imageSrc;
+                image.alt = `Imagem do projeto ${title}`;
+                image.style.width = '100%';
+                image.style.borderRadius = '8px';
+                image.style.marginBottom = '1.5rem';
+                modalMediaContainer.appendChild(image);
+            }
+
             modalTitle.textContent = title;
-            modalImage.src = image;
-            modalImage.alt = `Imagem do projeto ${title}`;
             modalDescription.textContent = desc;
             modalTechList.textContent = techs;
             modalGithubLink.href = github;
@@ -79,6 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModal = () => {
         modalContainer.classList.add('hidden');
         document.body.classList.remove('modal-open');
+        
+        const video = modalMediaContainer.querySelector('video');
+        if (video) {
+            video.pause();
+            video.currentTime = 0;
+        }
     }
 
     modalCloseBtn.addEventListener('click', closeModal);
