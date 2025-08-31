@@ -390,13 +390,6 @@ h2 {
     .sobre-mim-texto h2 { text-align: center; }
     .header h1 { font-size: 3.2rem; }
     h2 { font-size: 2.2rem; }
-
-    /* --- CÓDIGO ADICIONADO --- */
-    /* Esconde o vídeo em telas mobile para evitar o layout quebrado */
-    .card-projeto video {
-        display: none;
-    }
-    /* --- FIM DO CÓDIGO ADICIONADO --- */
 }
 
 
