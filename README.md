@@ -1,4 +1,4 @@
-# Portfólio de Gabriel Aparecido | Desenvolvedor Full-Stack
+# Portfólio de Gabriel Aparecido | Desenvolvedor Back-End
 
 Este é o código-fonte do meu portfólio pessoal, onde apresento minhas habilidades, projetos e informações de contato. O projeto foi desenvolvido para ser uma vitrine das minhas competências como desenvolvedor web, com foco em back-end, mas também demonstrando habilidades em front-end.
 
