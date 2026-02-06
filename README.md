@@ -49,7 +49,7 @@ Vamos conversar! Você pode me encontrar nas seguintes plataformas:
 
 Para mais detalhes sobre minha trajetória profissional e acadêmica, você pode fazer o download do meu currículo clicando no link abaixo:
 
-[**Download CV**](curriculo%20Gabriel%20Aparecido%20.pdf)
+[**Download CV**](curriculo%20Gabriel%20Aparecido.pdf)
 
 ---
 *&copy; 2025 Gabriel Aparecido. Todos os direitos reservados.*
