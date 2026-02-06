@@ -23,15 +23,17 @@ Aqui estão alguns dos projetos que desenvolvi e que estão apresentados no port
 * **Tecnologias:** PHP, MySQL, JWT, API REST, JavaScript.
 * **GitHub:** [https://github.com/gabrielsilvaa12/gardenme](https://github.com/gabrielsilvaa12/gardenme)
 
-### 3. API de Gerenciamento de Clientes
-* **Descrição:** API RESTful completa desenvolvida em ASP.NET Core 8 para o gerenciamento de clientes. A API inclui funcionalidades de CRUD, exclusão lógica (soft delete) e validação de CPF em tempo real, consultando um serviço externo do governo.
-* **Tecnologias:** .NET 8, ASP.NET Core, Entity Framework Core, SQL Server, Swagger.
-* **GitHub:** [https://github.com/gabrielsilvaa12/ApiClientes](https://github.com/gabrielsilvaa12/ApiClientes)
+### 3. GardenMe (App)
+* **Descrição:** O GardenMe é um assistente móvel em Flutter que ajuda o usuário a ter controle total                 sobre suas plantas através de alarmes de rega e fertilização, autenticação Google, gamificação
+e compartilhamento social.
+* **Tecnologias:** Flutter, Dart, Firebase (Auth, Firestore, Storage)
+* **GitHub:** [https://github.com/gabrielsilvaa12/GardenMeMobile](https://github.com/gabrielsilvaa12/GardenMeMobile)
 
 ## 🛠️ Habilidades Técnicas
 
 * **Back-End:** C# (.NET, ASP.NET Core), PHP, Python
 * **Front-End:** HTML5, CSS3, JavaScript
+* **Front-End:** Flutter, Dart, Firebase
 * **Bancos de Dados:** SQL Server, MySQL
 * **Ferramentas e Conceitos:** Git, API REST, MVC, Entity Framework, JWT
 
@@ -47,7 +49,7 @@ Vamos conversar! Você pode me encontrar nas seguintes plataformas:
 
 Para mais detalhes sobre minha trajetória profissional e acadêmica, você pode fazer o download do meu currículo clicando no link abaixo:
 
-[**Download CV**](curriculo%20Gabriel%20Aparecido%20(1).pdf)
+[**Download CV**](curriculo%20Gabriel%20Aparecido%20.pdf)
 
 ---
 *&copy; 2025 Gabriel Aparecido. Todos os direitos reservados.*
