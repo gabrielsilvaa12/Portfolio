@@ -446,3 +446,67 @@ h2 {
     object-fit: cover;
     background-color: var(--cor-texto-escuro);
 }
+
+.mouse-light {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(35, 213, 171, 0.15) 0%, rgba(35, 213, 171, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none; /* Garante que a luz não atrapalhe os cliques em botões */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Fica acima do fundo, mas abaixo do conteúdo principal */
+    transition: opacity 0.3s ease;
+}
+
+.ver-mais-container {
+    width: 100%;        /* Ocupa toda a largura da seção */
+    display: flex;      /* Ativa o modo flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 3rem;   /* Espaçamento em relação aos cards */
+    clear: both;        /* Garante que não haja interferência de elementos flutuantes */
+}
+
+.ver-mais-container .btn--primary {
+    display: inline-block;
+    text-align: center;
+}
+
+.language-selector {
+    margin-right: 1.5rem;
+    z-index: 101;
+}
+
+#lang-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--cor-creme);
+    padding: 0.5rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--fonte-corpo);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#lang-btn:hover {
+    background: var(--cor-destaque);
+    color: var(--cor-texto-escuro);
+    border-color: var(--cor-destaque);
+}
+
+#lang-btn i {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .language-selector {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+}

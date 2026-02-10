@@ -13,6 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.remove("active");
     }));
     
+
+    // Criar o elemento da luz
+const mouseLight = document.createElement('div');
+mouseLight.classList.add('mouse-light');
+document.body.appendChild(mouseLight);
+
+// Atualizar a posição com o movimento do mouse
+document.addEventListener('mousemove', (e) => {
+    // e.clientX e e.clientY pegam a posição do mouse na janela
+    mouseLight.style.left = `${e.clientX}px`;
+    mouseLight.style.top = `${e.clientY}px`;
+});
+    
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll(".nav-menu a");
 
